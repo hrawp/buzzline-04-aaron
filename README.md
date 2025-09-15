@@ -1,4 +1,4 @@
-# buzzline-04-case
+# buzzline-04-aaron
 
 We can analyze and visualize different types of streaming data as the information arrives.
 

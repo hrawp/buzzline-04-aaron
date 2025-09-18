@@ -1,5 +1,14 @@
 # buzzline-04-aaron
 
+In this project I will use a given producer which sends JSON data to a Kafka topic.  This data will flow into a consumer which will look for the highest
+number of counts of keywords.  It will log the top 10 keywords and keep updating them. 
+
+I will plot the top 5 to a polling bar chart.  The bar chart will not show keyword counts.  Rather the top 5 key words and the average setiment for each key word.
+
+The big idea is to see the top five keywords and what that keyword has as an average setiment score for the message it was in.
+
+
+
 We can analyze and visualize different types of streaming data as the information arrives.
 
 The producers don't change from buzzline-03-case - they write the same information to a Kafka topic, except the csv producer for the smart smoker has been modified to not run continuously. It will stop after reading all the rows in the CSV file.

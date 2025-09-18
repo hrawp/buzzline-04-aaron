@@ -5,7 +5,7 @@ number of counts of keywords.  It will log the top 10 keywords and keep updating
 
 I will plot the top 5 to a polling bar chart.  The bar chart will not show keyword counts.  Rather the top 5 key words and the average setiment for each key word.
 
-The big idea is to see the top five keywords and what that keyword has as an average setiment score for the message it was in.
+The big idea is to see the top five keywords and what that keyword has as an average sentiment score for the message it was in.
 
 
 

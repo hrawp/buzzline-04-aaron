@@ -1,6 +1,7 @@
 # buzzline-04-aaron
 
 --------------------------------------------------------------------------------------------------
+
 ### The big idea for this project #4 is to see the top five keywords, and what that keyword has as an average sentiment score for the messages it was in.
 
 In this project I will use a given producer which sends JSON data to a Kafka topic.  This data will flow into a consumer which will look for the highest
@@ -15,6 +16,8 @@ You can confirm the count of the top five keywords in the consumer log.  I don't
 
 
 ---------------------------------------------------------------------------------------------------
+
+
 We can analyze and visualize different types of streaming data as the information arrives.
 
 The producers don't change from buzzline-03-case - they write the same information to a Kafka topic, except the csv producer for the smart smoker has been modified to not run continuously. It will stop after reading all the rows in the CSV file.

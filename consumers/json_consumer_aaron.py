@@ -1,7 +1,7 @@
 """
 json_consumer_aaron.py
 
-Consume json messages from a Kafka topic and visualize author counts in real-time.
+Consume json messages from a Kafka topic and visualize keyword counts in real-time.
 
 JSON is a set of key:value pairs. 
 
@@ -20,7 +20,7 @@ Example JSON message (after deserialization) to be analyzed
 # Import packages from Python Standard Library
 import os
 import json  # handle JSON parsing
-from collections import defaultdict  # data structure for counting author occurrences
+from collections import defaultdict  # data structure for counting keyword occurrences
 
 # Import external packages
 from dotenv import load_dotenv
@@ -48,7 +48,7 @@ load_dotenv()
 
 def get_kafka_topic() -> str:
     """Fetch Kafka topic from environment or use default."""
-    topic = os.getenv("BUZZ_TOPIC", "unknown_topic")
+    topic = os.getenv("PROJECT_TOPIC", "buzzline-topic")
     logger.info(f"Kafka topic: {topic}")
     return topic
 
@@ -64,8 +64,11 @@ def get_kafka_consumer_group_id() -> str:
 # Set up data structures
 #####################################
 
-# Initialize a dictionary to store author counts
-author_counts = defaultdict(int)
+# Track how many times each keyword has appeared
+keyword_counts = defaultdict(int)
+
+# Track running average of sentiment for each keyword
+keyword_sentiment_avg = defaultdict(float)
 
 #####################################
 # Set up live visuals
@@ -88,28 +91,29 @@ plt.ion()
 
 
 def update_chart():
-    """Update the live chart with the latest author counts."""
+    """Update the live chart with the latest keyword counts."""
     # Clear the previous chart
     ax.clear()
 
-    # Get the authors and counts from the dictionary
-    authors_list = list(author_counts.keys())
-    counts_list = list(author_counts.values())
+    # Get the keywords and counts from the dictionary
+    keywords_list = list(keyword_sentiment_avg.keys())
+    sentiment_avg_list = list(keyword_sentiment_avg.values())
+
 
     # Create a bar chart using the bar() method.
     # Pass in the x list, the y list, and the color
-    ax.bar(authors_list, counts_list, color="skyblue")
+    ax.bar(keywords_list, sentiment_avg_list, color="skyblue")
 
     # Use the built-in axes methods to set the labels and title
-    ax.set_xlabel("Authors")
-    ax.set_ylabel("Message Counts")
-    ax.set_title("Aaron Real-Time Author Message Counts")
+    ax.set_xlabel("Keywords")
+    ax.set_ylabel("Sentiment Percentage")
+    ax.set_title("The Top 5 Keywords with Sentiment Rating")
 
     # Use the set_xticklabels() method to rotate the x-axis labels
     # Pass in the x list, specify the rotation angle is 45 degrees,
     # and align them to the right
     # ha stands for horizontal alignment
-    ax.set_xticklabels(authors_list, rotation=45, ha="right")
+    ax.set_xticklabels(keywords_list, rotation=45, ha="right")
 
     # Use the tight_layout() method to automatically adjust the padding
     plt.tight_layout()
@@ -143,23 +147,40 @@ def process_message(message: str) -> None:
         # Ensure the processed JSON is logged for debugging
         logger.info(f"Processed JSON message: {message_dict}")
 
-        # Ensure it's a dictionary before accessing fields
         if isinstance(message_dict, dict):
-            # Extract the 'author' field from the Python dictionary
-            author = message_dict.get("author", "unknown")
-            logger.info(f"Message received from author: {author}")
+            # Extract the 'keyword' and 'sentiment' fields
+            keyword = message_dict.get("keyword_mentioned", "unknown")
+            sentiment_raw = message_dict.get("sentiment", None)
 
-            # Increment the count for the author
-            author_counts[author] += 1
+            # Validate and convert sentiment
+            try:
+                sentiment = float(sentiment_raw)
+            except (TypeError, ValueError):
+                logger.warning(f"Ignoring message due to invalid sentiment: {sentiment_raw}")
+                return  # skip processing this message
 
-            # Log the updated counts
-            logger.info(f"Updated author counts: {dict(author_counts)}")
+            logger.info(f"Message received - Keyword: {keyword}, Sentiment: {sentiment}")
+
+            # Increment the count for the keyword
+            keyword_counts[keyword] += 1
+            count = keyword_counts[keyword]
+
+            # Calculate running average
+            prev_avg = keyword_sentiment_avg[keyword]
+            new_avg = prev_avg + (sentiment - prev_avg) / count
+
+            # Update sentiment average
+            keyword_sentiment_avg[keyword] = new_avg
+
+            # Log the updated values
+            formatted_avg = {k: round(v, 2) for k, v in keyword_sentiment_avg.items()}
+            logger.info(f"Updated keyword sentiment averages: {formatted_avg}")
+            logger.info(f"Updated keyword counts: {dict(keyword_counts)}")
 
             # Update the chart
             update_chart()
+            logger.info(f"Chart updated successfully for keyword: {keyword}")
 
-            # Log the updated chart
-            logger.info(f"Chart updated successfully for message: {message}")
         else:
             logger.error(f"Expected a dictionary but got: {type(message_dict)}")
 

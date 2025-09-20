@@ -4,15 +4,17 @@
 
 ### The big idea for this project #4 is to see the top five keywords, and what that keyword has as an average sentiment score for the messages it was in.
 
-In this project I will use a given producer which sends JSON data to a Kafka topic.  This data will flow into a consumer which will look for the highest
-number of counts of keywords.  It will log all keywords and keep updating them. 
+In this project I will use a given producer which sends JSON data to a Kafka topic.  This data will flow into a consumer which will look for the highest
+number of counts of keywords.  It will log all keywords and keep updating them.  It will also calculate the average sentiment score for each message.
 
-I will plot the top 5 to a polling bar chart.  The bar chart will not show keyword counts.  Rather the top 5 key words and the average setiment for each key word.
+
+I will plot the top 5 to a polling bar chart.  The bar chart will not show keyword counts.  Rather the top 5 key words and the average sentiment for each key word.
 The chart will show percentage of decimal value of sentiment average times 100.
-The chart will also show the 5 bar graphs with a gradient for color with 80% to 100% dark blue, less the 30% as light blue, and a gradient of those for precentages inbetween.
+The chart will also show the 5 bar graphs with a gradient for color with 80% to 100% dark blue, less the 30% as light blue, and a gradient of those for percentages in-between.
 
-I will show two different runs of the producer and consumer combo to see how the code shows the differnces. 
-You can confirm the count of the top five keywords in the consumer log.  I don't show that on the graph.
+
+I will show two different runs of the producer and consumer combo to see how the code shows the differences.
+You can confirm the count of the top five keywords in the consumer log.  I don't show that on the graph.
 
 
 ---------------------------------------------------------------------------------------------------

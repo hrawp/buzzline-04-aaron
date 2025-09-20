@@ -5,11 +5,6 @@ Consume json messages from a Kafka topic and visualize keyword counts in real-ti
 
 JSON is a set of key:value pairs. 
 
-Example serialized Kafka message
-"{\"message\": \"I love Python!\", \"author\": \"Eve\"}"
-
-Example JSON message (after deserialization) to be analyzed
-{"message": "I love Python!", "author": "Eve"}
 
 """
 

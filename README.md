@@ -1,14 +1,20 @@
 # buzzline-04-aaron
 
+--------------------------------------------------------------------------------------------------
+### The big idea for this project #4 is to see the top five keywords, and what that keyword has as an average sentiment score for the messages it was in.
+
 In this project I will use a given producer which sends JSON data to a Kafka topic.  This data will flow into a consumer which will look for the highest
-number of counts of keywords.  It will log the top 10 keywords and keep updating them. 
+number of counts of keywords.  It will log all keywords and keep updating them. 
 
-I will plot the top 5 to a polling bar chart.  The bar chart will not show keyword counts.  Rather the top 5 key words and the average sentiment for each key word.
+I will plot the top 5 to a polling bar chart.  The bar chart will not show keyword counts.  Rather the top 5 key words and the average setiment for each key word.
+The chart will show percentage of decimal value of sentiment average times 100.
+The chart will also show the 5 bar graphs with a gradient for color with 80% to 100% dark blue, less the 30% as light blue, and a gradient of those for precentages inbetween.
 
-The big idea is to see the top five keywords and what that keyword has as an average sentiment score for the messages it was in.
+I will show two different runs of the producer and consumer combo to see how the code shows the differnces. 
+You can confirm the count of the top five keywords in the consumer log.  I don't show that on the graph.
 
 
-
+---------------------------------------------------------------------------------------------------
 We can analyze and visualize different types of streaming data as the information arrives.
 
 The producers don't change from buzzline-03-case - they write the same information to a Kafka topic, except the csv producer for the smart smoker has been modified to not run continuously. It will stop after reading all the rows in the CSV file.
@@ -135,14 +141,14 @@ Windows:
 
 ```shell
 .venv\Scripts\activate
-py -m producers.basic_json_producer_case
+py -m producers.project_producer_case
 ```
 
 Mac/Linux:
 
 ```zsh
 source .venv/bin/activate
-python3 -m producers.basic_json_producer_case
+python3 -m producers.project_producer_case
 ```
 
 ### Consumer Terminal
@@ -156,14 +162,14 @@ Windows:
 
 ```shell
 .venv\Scripts\activate
-py -m consumers.basic_json_consumer_case
+py -m consumers.json_consumer_aaron
 ```
 
 Mac/Linux:
 
 ```zsh
 source .venv/bin/activate
-python3 -m consumers.basic_json_consumer_case
+python3 -m consumers.basic_json_consumer_aaron
 ```
 
 ### Review the Application Code

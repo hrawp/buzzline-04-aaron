@@ -21,6 +21,7 @@ Example JSON message (after deserialization) to be analyzed
 import os
 import json  # handle JSON parsing
 from collections import defaultdict  # data structure for counting keyword occurrences
+from matplotlib.ticker import PercentFormatter
 
 # Import external packages
 from dotenv import load_dotenv
@@ -91,38 +92,42 @@ plt.ion()
 
 
 def update_chart():
-    """Update the live chart with the latest keyword counts."""
+    """Update the live chart with the top 5 keyword sentiment averages."""
     # Clear the previous chart
     ax.clear()
 
-    # Get the keywords and counts from the dictionary
-    keywords_list = list(keyword_sentiment_avg.keys())
-    sentiment_avg_list = list(keyword_sentiment_avg.values())
+    # Get top 5 keywords by count
+    top_keywords = sorted(keyword_counts.items(), key=lambda x: x[1], reverse=True)[:5]
 
+    # Extract just the keywords
+    keywords_list = [keyword for keyword, _ in top_keywords]
 
-    # Create a bar chart using the bar() method.
-    # Pass in the x list, the y list, and the color
+    # Get the corresponding sentiment averages
+    sentiment_avg_list = [keyword_sentiment_avg[keyword] for keyword in keywords_list]
+
+    # Manually convert sentiments to percentage values
+    sentiment_avg_list = [keyword_sentiment_avg[keyword] * 100 for keyword in keywords_list]
+
+    # Create the bar chart
     ax.bar(keywords_list, sentiment_avg_list, color="skyblue")
 
-    # Use the built-in axes methods to set the labels and title
+    # Set labels and title
     ax.set_xlabel("Keywords")
     ax.set_ylabel("Sentiment Percentage")
-    ax.set_title("The Top 5 Keywords with Sentiment Rating")
+    ax.set_title("Top 5 Keywords by Count with Sentiment Rating")
 
-    # Use the set_xticklabels() method to rotate the x-axis labels
-    # Pass in the x list, specify the rotation angle is 45 degrees,
-    # and align them to the right
-    # ha stands for horizontal alignment
+    # Rotate x-axis labels for readability
     ax.set_xticklabels(keywords_list, rotation=45, ha="right")
 
-    # Use the tight_layout() method to automatically adjust the padding
+    # Manually format y-axis tick labels to include %
+    y_ticks = ax.get_yticks()
+    ax.set_yticklabels([f"{int(tick)}%" for tick in y_ticks])
+
+    # Adjust layout and draw chart
     plt.tight_layout()
-
-    # Draw the chart
     plt.draw()
-
-    # Pause briefly to allow some time for the chart to render
     plt.pause(0.01)
+
 
 
 #####################################

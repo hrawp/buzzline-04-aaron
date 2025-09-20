@@ -1,126 +1,163 @@
-2025-09-19 21:12:18 | INFO | {'message': 'I just found a meme! It was boring.', 'author': 'Eve', 'timestamp': '2025-09-19 21:12:18', 'category': 'humor', 'sentiment': 0.53, 'keyword_mentioned': 'meme', 'message_length': 35}
-2025-09-19 21:12:18 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just found a meme! It was boring.', 'author': 'Eve', 'timestamp': '2025-09-19 21:12:18', 'category': 'humor', 'sentiment': 0.53, 'keyword_mentioned': 'meme', 'message_length': 35}
-2025-09-19 21:12:23 | INFO | {'message': 'I just found JavaScript! It was exciting.', 'author': 'Eve', 'timestamp': '2025-09-19 21:12:23', 'category': 'tech', 'sentiment': 0.9, 'keyword_mentioned': 'JavaScript', 'message_length': 41}
-2025-09-19 21:12:23 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just found JavaScript! It was exciting.', 'author': 'Eve', 'timestamp': '2025-09-19 21:12:23', 'category': 'tech', 'sentiment': 0.9, 'keyword_mentioned': 'JavaScript', 'message_length': 41}
-2025-09-19 21:12:28 | INFO | {'message': 'I just loved a story! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-19 21:12:28', 'category': 'other', 'sentiment': 0.78, 'keyword_mentioned': 'other', 'message_length': 35}
-2025-09-19 21:12:28 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just loved a story! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-19 21:12:28', 'category': 'other', 'sentiment': 0.78, 'keyword_mentioned': 'other', 'message_length': 35}
-2025-09-19 21:12:33 | INFO | {'message': 'I just loved a movie! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-19 21:12:33', 'category': 'entertainment', 'sentiment': 1.0, 'keyword_mentioned': 'movie', 'message_length': 38}
-2025-09-19 21:12:33 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just loved a movie! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-19 21:12:33', 'category': 'entertainment', 'sentiment': 1.0, 'keyword_mentioned': 'movie', 'message_length': 38}
-2025-09-19 21:12:38 | INFO | {'message': 'I just found an app! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:12:38', 'category': 'other', 'sentiment': 0.07, 'keyword_mentioned': 'other', 'message_length': 34}
-2025-09-19 21:12:38 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just found an app! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:12:38', 'category': 'other', 'sentiment': 0.07, 'keyword_mentioned': 'other', 'message_length': 34}
-2025-09-19 21:12:43 | INFO | {'message': 'I just found Python! It was boring.', 'author': 'Bob', 'timestamp': '2025-09-19 21:12:43', 'category': 'tech', 'sentiment': 0.67, 'keyword_mentioned': 'Python', 'message_length': 35}
-2025-09-19 21:12:43 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just found Python! It was boring.', 'author': 'Bob', 'timestamp': '2025-09-19 21:12:43', 'category': 'tech', 'sentiment': 0.67, 'keyword_mentioned': 'Python', 'message_length': 35}
-2025-09-19 21:12:48 | INFO | {'message': 'I just loved a movie! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-19 21:12:48', 'category': 'entertainment', 'sentiment': 0.54, 'keyword_mentioned': 'movie', 'message_length': 38}
-2025-09-19 21:12:48 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just loved a movie! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-19 21:12:48', 'category': 'entertainment', 'sentiment': 0.54, 'keyword_mentioned': 'movie', 'message_length': 38}
-2025-09-19 21:12:53 | INFO | {'message': 'I just loved a story! It was boring.', 'author': 'Bob', 'timestamp': '2025-09-19 21:12:53', 'category': 'other', 'sentiment': 0.58, 'keyword_mentioned': 'other', 'message_length': 36}
-2025-09-19 21:12:53 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just loved a story! It was boring.', 'author': 'Bob', 'timestamp': '2025-09-19 21:12:53', 'category': 'other', 'sentiment': 0.58, 'keyword_mentioned': 'other', 'message_length': 36}
-2025-09-19 21:12:58 | INFO | {'message': 'I just loved game! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-19 21:12:58', 'category': 'gaming', 'sentiment': 0.12, 'keyword_mentioned': 'game', 'message_length': 32}
-2025-09-19 21:12:58 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just loved game! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-19 21:12:58', 'category': 'gaming', 'sentiment': 0.12, 'keyword_mentioned': 'game', 'message_length': 32}
-2025-09-19 21:13:03 | INFO | {'message': 'I just shared travel! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:13:03', 'category': 'travel', 'sentiment': 0.46, 'keyword_mentioned': 'travel', 'message_length': 35}
-2025-09-19 21:13:03 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared travel! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:13:03', 'category': 'travel', 'sentiment': 0.46, 'keyword_mentioned': 'travel', 'message_length': 35}
-2025-09-19 21:13:07 | WARNING | Producer interrupted by user.
-2025-09-19 21:13:07 | INFO | Kafka producer closed.
-2025-09-19 21:13:07 | INFO | Producer shutting down.
-2025-09-19 21:17:26 | INFO | Logging to file: logs/project_log.log
-2025-09-19 21:17:26 | INFO | Log sanitization enabled, personal info removed
-2025-09-19 21:17:26 | INFO | START producer...
-2025-09-19 21:17:26 | INFO | Kafka producer connected to localhost:9092
-2025-09-19 21:17:26 | INFO | {'message': 'I just tried Python! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:17:26', 'category': 'tech', 'sentiment': 0.23, 'keyword_mentioned': 'Python', 'message_length': 34}
-2025-09-19 21:17:26 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just tried Python! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:17:26', 'category': 'tech', 'sentiment': 0.23, 'keyword_mentioned': 'Python', 'message_length': 34}
-2025-09-19 21:17:26 | INFO | Logging to file: logs/project_log.log
-2025-09-19 21:17:26 | INFO | Log sanitization enabled, personal info removed
-2025-09-19 21:17:27 | INFO | START consumer.
-2025-09-19 21:17:27 | INFO | Kafka topic: project_json
-2025-09-19 21:17:27 | INFO | Kafka consumer group id: buzz_group
-2025-09-19 21:17:27 | INFO | Consumer: Topic 'project_json' and group 'buzz_group'...
-2025-09-19 21:17:27 | INFO | Kafka broker address: localhost:9092
-2025-09-19 21:17:27 | INFO | Creating Kafka consumer. Topic='project_json' and group ID='buzz_group'.
-2025-09-19 21:17:27 | INFO | Kafka consumer created successfully.
-2025-09-19 21:17:27 | INFO | Polling messages from topic 'project_json'...
-2025-09-19 21:17:31 | INFO | Processed JSON message: {'message': 'I just tried Python! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:17:26', 'category': 'tech', 'sentiment': 0.23, 'keyword_mentioned': 'Python', 'message_length': 34}
-2025-09-19 21:17:31 | INFO | Message received - Keyword: Python, Sentiment: 0.23
-2025-09-19 21:17:31 | INFO | Updated keyword sentiment averages: {'Python': 0.23}
-2025-09-19 21:17:31 | INFO | Updated keyword counts: {'Python': 1}
-2025-09-19 21:17:31 | INFO | Chart updated successfully for keyword: Python
-2025-09-19 21:17:31 | INFO | {'message': 'I just found a story! It was boring.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:17:31', 'category': 'other', 'sentiment': 0.52, 'keyword_mentioned': 'other', 'message_length': 36}
-2025-09-19 21:17:31 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just found a story! It was boring.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:17:31', 'category': 'other', 'sentiment': 0.52, 'keyword_mentioned': 'other', 'message_length': 36}
-2025-09-19 21:17:31 | INFO | Processed JSON message: {'message': 'I just found a story! It was boring.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:17:31', 'category': 'other', 'sentiment': 0.52, 'keyword_mentioned': 'other', 'message_length': 36}
-2025-09-19 21:17:31 | INFO | Message received - Keyword: other, Sentiment: 0.52
-2025-09-19 21:17:31 | INFO | Updated keyword sentiment averages: {'Python': 0.23, 'other': 0.52}
-2025-09-19 21:17:31 | INFO | Updated keyword counts: {'Python': 1, 'other': 1}
-2025-09-19 21:17:32 | INFO | Chart updated successfully for keyword: other
-2025-09-19 21:17:36 | INFO | {'message': 'I just saw a meme! It was funny.', 'author': 'Bob', 'timestamp': '2025-09-19 21:17:36', 'category': 'humor', 'sentiment': 0.18, 'keyword_mentioned': 'meme', 'message_length': 32}
-2025-09-19 21:17:36 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just saw a meme! It was funny.', 'author': 'Bob', 'timestamp': '2025-09-19 21:17:36', 'category': 'humor', 'sentiment': 0.18, 'keyword_mentioned': 'meme', 'message_length': 32}
-2025-09-19 21:17:36 | INFO | Processed JSON message: {'message': 'I just saw a meme! It was funny.', 'author': 'Bob', 'timestamp': '2025-09-19 21:17:36', 'category': 'humor', 'sentiment': 0.18, 'keyword_mentioned': 'meme', 'message_length': 32}
-2025-09-19 21:17:36 | INFO | Message received - Keyword: meme, Sentiment: 0.18
-2025-09-19 21:17:36 | INFO | Updated keyword sentiment averages: {'Python': 0.23, 'other': 0.52, 'meme': 0.18}
-2025-09-19 21:17:36 | INFO | Updated keyword counts: {'Python': 1, 'other': 1, 'meme': 1}
-2025-09-19 21:17:37 | INFO | Chart updated successfully for keyword: meme
-2025-09-19 21:17:41 | INFO | {'message': 'I just tried a story! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:17:41', 'category': 'other', 'sentiment': 0.47, 'keyword_mentioned': 'other', 'message_length': 35}
-2025-09-19 21:17:41 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just tried a story! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:17:41', 'category': 'other', 'sentiment': 0.47, 'keyword_mentioned': 'other', 'message_length': 35}
-2025-09-19 21:17:41 | INFO | Processed JSON message: {'message': 'I just tried a story! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:17:41', 'category': 'other', 'sentiment': 0.47, 'keyword_mentioned': 'other', 'message_length': 35}
-2025-09-19 21:17:41 | INFO | Message received - Keyword: other, Sentiment: 0.47
-2025-09-19 21:17:41 | INFO | Updated keyword sentiment averages: {'Python': 0.23, 'other': 0.49, 'meme': 0.18}
-2025-09-19 21:17:41 | INFO | Updated keyword counts: {'Python': 1, 'other': 2, 'meme': 1}
-2025-09-19 21:17:42 | INFO | Chart updated successfully for keyword: other
-2025-09-19 21:17:46 | WARNING | Consumer interrupted by user.
-2025-09-19 21:17:46 | INFO | Kafka consumer for topic 'project_json' closed.
-2025-09-19 21:17:46 | INFO | END consumer for topic 'project_json' and group 'buzz_group'.
-2025-09-19 21:17:46 | INFO | {'message': 'I just loved a story! It was exciting.', 'author': 'Eve', 'timestamp': '2025-09-19 21:17:46', 'category': 'other', 'sentiment': 0.55, 'keyword_mentioned': 'other', 'message_length': 38}
-2025-09-19 21:17:46 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just loved a story! It was exciting.', 'author': 'Eve', 'timestamp': '2025-09-19 21:17:46', 'category': 'other', 'sentiment': 0.55, 'keyword_mentioned': 'other', 'message_length': 38}
-2025-09-19 21:17:49 | WARNING | Producer interrupted by user.
-2025-09-19 21:17:49 | INFO | Kafka producer closed.
-2025-09-19 21:17:49 | INFO | Producer shutting down.
-2025-09-19 21:19:01 | INFO | Logging to file: logs/project_log.log
-2025-09-19 21:19:01 | INFO | Log sanitization enabled, personal info removed
-2025-09-19 21:19:01 | INFO | Logging to file: logs/project_log.log
-2025-09-19 21:19:01 | INFO | Log sanitization enabled, personal info removed
-2025-09-19 21:19:01 | INFO | START producer...
-2025-09-19 21:19:02 | INFO | Kafka producer connected to localhost:9092
-2025-09-19 21:19:02 | INFO | {'message': 'I just saw Python! It was funny.', 'author': 'Bob', 'timestamp': '2025-09-19 21:19:02', 'category': 'tech', 'sentiment': 0.11, 'keyword_mentioned': 'Python', 'message_length': 32}
-2025-09-19 21:19:02 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just saw Python! It was funny.', 'author': 'Bob', 'timestamp': '2025-09-19 21:19:02', 'category': 'tech', 'sentiment': 0.11, 'keyword_mentioned': 'Python', 'message_length': 32}
-2025-09-19 21:19:02 | INFO | START consumer.
-2025-09-19 21:19:02 | INFO | Kafka topic: project_json
-2025-09-19 21:19:02 | INFO | Kafka consumer group id: buzz_group
-2025-09-19 21:19:02 | INFO | Consumer: Topic 'project_json' and group 'buzz_group'...
-2025-09-19 21:19:02 | INFO | Kafka broker address: localhost:9092
-2025-09-19 21:19:02 | INFO | Creating Kafka consumer. Topic='project_json' and group ID='buzz_group'.
-2025-09-19 21:19:02 | INFO | Kafka consumer created successfully.
-2025-09-19 21:19:02 | INFO | Polling messages from topic 'project_json'...
-2025-09-19 21:19:06 | INFO | Processed JSON message: {'message': 'I just loved a story! It was exciting.', 'author': 'Eve', 'timestamp': '2025-09-19 21:17:46', 'category': 'other', 'sentiment': 0.55, 'keyword_mentioned': 'other', 'message_length': 38}
-2025-09-19 21:19:06 | INFO | Message received - Keyword: other, Sentiment: 0.55
-2025-09-19 21:19:06 | INFO | Updated keyword sentiment averages: {'other': 0.55}
-2025-09-19 21:19:06 | INFO | Updated keyword counts: {'other': 1}
-2025-09-19 21:19:06 | INFO | Chart updated successfully for keyword: other
-2025-09-19 21:19:06 | INFO | Processed JSON message: {'message': 'I just saw Python! It was funny.', 'author': 'Bob', 'timestamp': '2025-09-19 21:19:02', 'category': 'tech', 'sentiment': 0.11, 'keyword_mentioned': 'Python', 'message_length': 32}
-2025-09-19 21:19:06 | INFO | Message received - Keyword: Python, Sentiment: 0.11
-2025-09-19 21:19:06 | INFO | Updated keyword sentiment averages: {'other': 0.55, 'Python': 0.11}
-2025-09-19 21:19:06 | INFO | Updated keyword counts: {'other': 1, 'Python': 1}
-2025-09-19 21:19:06 | INFO | Chart updated successfully for keyword: Python
-2025-09-19 21:19:07 | INFO | {'message': 'I just saw Python! It was weird.', 'author': 'Eve', 'timestamp': '2025-09-19 21:19:07', 'category': 'tech', 'sentiment': 0.0, 'keyword_mentioned': 'Python', 'message_length': 32}
-2025-09-19 21:19:07 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just saw Python! It was weird.', 'author': 'Eve', 'timestamp': '2025-09-19 21:19:07', 'category': 'tech', 'sentiment': 0.0, 'keyword_mentioned': 'Python', 'message_length': 32}
-2025-09-19 21:19:07 | INFO | Processed JSON message: {'message': 'I just saw Python! It was weird.', 'author': 'Eve', 'timestamp': '2025-09-19 21:19:07', 'category': 'tech', 'sentiment': 0.0, 'keyword_mentioned': 'Python', 'message_length': 32}
-2025-09-19 21:19:07 | INFO | Message received - Keyword: Python, Sentiment: 0.0
-2025-09-19 21:19:07 | INFO | Updated keyword sentiment averages: {'other': 0.55, 'Python': 0.06}
-2025-09-19 21:19:07 | INFO | Updated keyword counts: {'other': 1, 'Python': 2}
-2025-09-19 21:19:07 | INFO | Chart updated successfully for keyword: Python
-2025-09-19 21:19:12 | INFO | {'message': 'I just loved a trick! It was weird.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:19:12', 'category': 'other', 'sentiment': 0.1, 'keyword_mentioned': 'other', 'message_length': 35}
-2025-09-19 21:19:12 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just loved a trick! It was weird.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:19:12', 'category': 'other', 'sentiment': 0.1, 'keyword_mentioned': 'other', 'message_length': 35}
-2025-09-19 21:19:12 | INFO | Processed JSON message: {'message': 'I just loved a trick! It was weird.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:19:12', 'category': 'other', 'sentiment': 0.1, 'keyword_mentioned': 'other', 'message_length': 35}
-2025-09-19 21:19:12 | INFO | Message received - Keyword: other, Sentiment: 0.1
-2025-09-19 21:19:12 | INFO | Updated keyword sentiment averages: {'other': 0.33, 'Python': 0.06}
-2025-09-19 21:19:12 | INFO | Updated keyword counts: {'other': 2, 'Python': 2}
-2025-09-19 21:19:12 | INFO | Chart updated successfully for keyword: other
-2025-09-19 21:19:17 | INFO | {'message': 'I just shared travel! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-19 21:19:17', 'category': 'travel', 'sentiment': 0.24, 'keyword_mentioned': 'travel', 'message_length': 35}
-2025-09-19 21:19:17 | INFO | Sent message to Kafka topic 'project_json': {'message': 'I just shared travel! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-19 21:19:17', 'category': 'travel', 'sentiment': 0.24, 'keyword_mentioned': 'travel', 'message_length': 35}
-2025-09-19 21:19:17 | INFO | Processed JSON message: {'message': 'I just shared travel! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-19 21:19:17', 'category': 'travel', 'sentiment': 0.24, 'keyword_mentioned': 'travel', 'message_length': 35}
-2025-09-19 21:19:17 | INFO | Message received - Keyword: travel, Sentiment: 0.24
-2025-09-19 21:19:17 | INFO | Updated keyword sentiment averages: {'other': 0.33, 'Python': 0.06, 'travel': 0.24}
-2025-09-19 21:19:17 | INFO | Updated keyword counts: {'other': 2, 'Python': 2, 'travel': 1}
-2025-09-19 21:19:17 | INFO | Chart updated successfully for keyword: travel
-2025-09-19 21:19:19 | WARNING | Consumer interrupted by user.
-2025-09-19 21:19:19 | INFO | Kafka consumer for topic 'project_json' closed.
-2025-09-19 21:19:19 | INFO | END consumer for topic 'project_json' and group 'buzz_group'.
-2025-09-19 21:19:22 | WARNING | Producer interrupted by user.
-2025-09-19 21:19:22 | INFO | Kafka producer closed.
-2025-09-19 21:19:22 | INFO | Producer shutting down.
+2025-09-19 21:33:02 | INFO | Processed JSON message: {'message': 'I just found recipe! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-19 21:33:02', 'category': 'food', 'sentiment': 0.81, 'keyword_mentioned': 'recipe', 'message_length': 34}
+2025-09-19 21:33:02 | INFO | Message received - Keyword: recipe, Sentiment: 0.81
+2025-09-19 21:33:02 | INFO | Updated keyword sentiment averages: {'movie': 0.38, 'game': 0.42, 'recipe': 0.44, 'other': 0.55, 'travel': 0.49, 'meme': 0.44, 'Python': 0.37, 'JavaScript': 0.46}
+2025-09-19 21:33:02 | INFO | Updated keyword counts: {'movie': 7, 'game': 10, 'recipe': 15, 'other': 29, 'travel': 6, 'meme': 3, 'Python': 4, 'JavaScript': 7}
+2025-09-19 21:33:02 | INFO | Chart updated successfully for keyword: recipe
+2025-09-19 21:33:07 | INFO | Processed JSON message: {'message': 'I just saw a trick! It was funny.', 'author': 'Bob', 'timestamp': '2025-09-19 21:33:07', 'category': 'other', 'sentiment': 0.05, 'keyword_mentioned': 'other', 'message_length': 33}
+2025-09-19 21:33:07 | INFO | Message received - Keyword: other, Sentiment: 0.05
+2025-09-19 21:33:07 | INFO | Updated keyword sentiment averages: {'movie': 0.38, 'game': 0.42, 'recipe': 0.44, 'other': 0.53, 'travel': 0.49, 'meme': 0.44, 'Python': 0.37, 'JavaScript': 0.46}
+2025-09-19 21:33:07 | INFO | Updated keyword counts: {'movie': 7, 'game': 10, 'recipe': 15, 'other': 30, 'travel': 6, 'meme': 3, 'Python': 4, 'JavaScript': 7}
+2025-09-19 21:33:07 | INFO | Chart updated successfully for keyword: other
+2025-09-19 21:33:12 | INFO | Processed JSON message: {'message': 'I just tried an app! It was boring.', 'author': 'Eve', 'timestamp': '2025-09-19 21:33:12', 'category': 'other', 'sentiment': 0.79, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-09-19 21:33:12 | INFO | Message received - Keyword: other, Sentiment: 0.79
+2025-09-19 21:33:12 | INFO | Updated keyword sentiment averages: {'movie': 0.38, 'game': 0.42, 'recipe': 0.44, 'other': 0.54, 'travel': 0.49, 'meme': 0.44, 'Python': 0.37, 'JavaScript': 0.46}
+2025-09-19 21:33:12 | INFO | Updated keyword counts: {'movie': 7, 'game': 10, 'recipe': 15, 'other': 31, 'travel': 6, 'meme': 3, 'Python': 4, 'JavaScript': 7}
+2025-09-19 21:33:12 | INFO | Chart updated successfully for keyword: other
+2025-09-19 21:33:17 | INFO | Processed JSON message: {'message': 'I just found a movie! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:33:17', 'category': 'entertainment', 'sentiment': 0.05, 'keyword_mentioned': 'movie', 'message_length': 35}
+2025-09-19 21:33:17 | INFO | Message received - Keyword: movie, Sentiment: 0.05
+2025-09-19 21:33:17 | INFO | Updated keyword sentiment averages: {'movie': 0.34, 'game': 0.42, 'recipe': 0.44, 'other': 0.54, 'travel': 0.49, 'meme': 0.44, 'Python': 0.37, 'JavaScript': 0.46}
+2025-09-19 21:33:17 | INFO | Updated keyword counts: {'movie': 8, 'game': 10, 'recipe': 15, 'other': 31, 'travel': 6, 'meme': 3, 'Python': 4, 'JavaScript': 7}
+2025-09-19 21:33:17 | INFO | Chart updated successfully for keyword: movie
+2025-09-19 21:33:22 | INFO | Processed JSON message: {'message': 'I just shared JavaScript! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-19 21:33:22', 'category': 'tech', 'sentiment': 0.32, 'keyword_mentioned': 'JavaScript', 'message_length': 39}
+2025-09-19 21:33:22 | INFO | Message received - Keyword: JavaScript, Sentiment: 0.32
+2025-09-19 21:33:22 | INFO | Updated keyword sentiment averages: {'movie': 0.34, 'game': 0.42, 'recipe': 0.44, 'other': 0.54, 'travel': 0.49, 'meme': 0.44, 'Python': 0.37, 'JavaScript': 0.44}
+2025-09-19 21:33:22 | INFO | Updated keyword counts: {'movie': 8, 'game': 10, 'recipe': 15, 'other': 31, 'travel': 6, 'meme': 3, 'Python': 4, 'JavaScript': 8}
+2025-09-19 21:33:22 | INFO | Chart updated successfully for keyword: JavaScript
+2025-09-19 21:33:27 | INFO | Processed JSON message: {'message': 'I just tried an app! It was exciting.', 'author': 'Eve', 'timestamp': '2025-09-19 21:33:27', 'category': 'other', 'sentiment': 0.96, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-09-19 21:33:27 | INFO | Message received - Keyword: other, Sentiment: 0.96
+2025-09-19 21:33:27 | INFO | Updated keyword sentiment averages: {'movie': 0.34, 'game': 0.42, 'recipe': 0.44, 'other': 0.56, 'travel': 0.49, 'meme': 0.44, 'Python': 0.37, 'JavaScript': 0.44}
+2025-09-19 21:33:27 | INFO | Updated keyword counts: {'movie': 8, 'game': 10, 'recipe': 15, 'other': 32, 'travel': 6, 'meme': 3, 'Python': 4, 'JavaScript': 8}
+2025-09-19 21:33:27 | INFO | Chart updated successfully for keyword: other
+2025-09-19 21:33:32 | INFO | Processed JSON message: {'message': 'I just loved travel! It was amazing.', 'author': 'Eve', 'timestamp': '2025-09-19 21:33:32', 'category': 'travel', 'sentiment': 0.94, 'keyword_mentioned': 'travel', 'message_length': 36}
+2025-09-19 21:33:32 | INFO | Message received - Keyword: travel, Sentiment: 0.94
+2025-09-19 21:33:32 | INFO | Updated keyword sentiment averages: {'movie': 0.34, 'game': 0.42, 'recipe': 0.44, 'other': 0.56, 'travel': 0.55, 'meme': 0.44, 'Python': 0.37, 'JavaScript': 0.44}
+2025-09-19 21:33:32 | INFO | Updated keyword counts: {'movie': 8, 'game': 10, 'recipe': 15, 'other': 32, 'travel': 7, 'meme': 3, 'Python': 4, 'JavaScript': 8}
+2025-09-19 21:33:32 | INFO | Chart updated successfully for keyword: travel
+2025-09-19 21:33:37 | INFO | Processed JSON message: {'message': 'I just saw an app! It was funny.', 'author': 'Eve', 'timestamp': '2025-09-19 21:33:37', 'category': 'other', 'sentiment': 0.07, 'keyword_mentioned': 'other', 'message_length': 32}
+2025-09-19 21:33:37 | INFO | Message received - Keyword: other, Sentiment: 0.07
+2025-09-19 21:33:37 | INFO | Updated keyword sentiment averages: {'movie': 0.34, 'game': 0.42, 'recipe': 0.44, 'other': 0.54, 'travel': 0.55, 'meme': 0.44, 'Python': 0.37, 'JavaScript': 0.44}
+2025-09-19 21:33:37 | INFO | Updated keyword counts: {'movie': 8, 'game': 10, 'recipe': 15, 'other': 33, 'travel': 7, 'meme': 3, 'Python': 4, 'JavaScript': 8}
+2025-09-19 21:33:37 | INFO | Chart updated successfully for keyword: other
+2025-09-19 21:33:42 | INFO | Processed JSON message: {'message': 'I just shared recipe! It was funny.', 'author': 'Alice', 'timestamp': '2025-09-19 21:33:42', 'category': 'food', 'sentiment': 0.87, 'keyword_mentioned': 'recipe', 'message_length': 35}
+2025-09-19 21:33:42 | INFO | Message received - Keyword: recipe, Sentiment: 0.87
+2025-09-19 21:33:42 | INFO | Updated keyword sentiment averages: {'movie': 0.34, 'game': 0.42, 'recipe': 0.46, 'other': 0.54, 'travel': 0.55, 'meme': 0.44, 'Python': 0.37, 'JavaScript': 0.44}
+2025-09-19 21:33:42 | INFO | Updated keyword counts: {'movie': 8, 'game': 10, 'recipe': 16, 'other': 33, 'travel': 7, 'meme': 3, 'Python': 4, 'JavaScript': 8}
+2025-09-19 21:33:42 | INFO | Chart updated successfully for keyword: recipe
+2025-09-19 21:33:47 | INFO | Processed JSON message: {'message': 'I just loved game! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-19 21:33:47', 'category': 'gaming', 'sentiment': 0.2, 'keyword_mentioned': 'game', 'message_length': 32}
+2025-09-19 21:33:47 | INFO | Message received - Keyword: game, Sentiment: 0.2
+2025-09-19 21:33:47 | INFO | Updated keyword sentiment averages: {'movie': 0.34, 'game': 0.4, 'recipe': 0.46, 'other': 0.54, 'travel': 0.55, 'meme': 0.44, 'Python': 0.37, 'JavaScript': 0.44}
+2025-09-19 21:33:47 | INFO | Updated keyword counts: {'movie': 8, 'game': 11, 'recipe': 16, 'other': 33, 'travel': 7, 'meme': 3, 'Python': 4, 'JavaScript': 8}
+2025-09-19 21:33:47 | INFO | Chart updated successfully for keyword: game
+2025-09-19 21:33:52 | INFO | Processed JSON message: {'message': 'I just tried a movie! It was weird.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:33:52', 'category': 'entertainment', 'sentiment': 0.04, 'keyword_mentioned': 'movie', 'message_length': 35}
+2025-09-19 21:33:52 | INFO | Message received - Keyword: movie, Sentiment: 0.04
+2025-09-19 21:33:52 | INFO | Updated keyword sentiment averages: {'movie': 0.31, 'game': 0.4, 'recipe': 0.46, 'other': 0.54, 'travel': 0.55, 'meme': 0.44, 'Python': 0.37, 'JavaScript': 0.44}
+2025-09-19 21:33:52 | INFO | Updated keyword counts: {'movie': 9, 'game': 11, 'recipe': 16, 'other': 33, 'travel': 7, 'meme': 3, 'Python': 4, 'JavaScript': 8}
+2025-09-19 21:33:52 | INFO | Chart updated successfully for keyword: movie
+2025-09-19 21:33:57 | INFO | Processed JSON message: {'message': 'I just saw a meme! It was amazing.', 'author': 'Bob', 'timestamp': '2025-09-19 21:33:57', 'category': 'humor', 'sentiment': 0.13, 'keyword_mentioned': 'meme', 'message_length': 34}
+2025-09-19 21:33:57 | INFO | Message received - Keyword: meme, Sentiment: 0.13
+2025-09-19 21:33:57 | INFO | Updated keyword sentiment averages: {'movie': 0.31, 'game': 0.4, 'recipe': 0.46, 'other': 0.54, 'travel': 0.55, 'meme': 0.36, 'Python': 0.37, 'JavaScript': 0.44}
+2025-09-19 21:33:57 | INFO | Updated keyword counts: {'movie': 9, 'game': 11, 'recipe': 16, 'other': 33, 'travel': 7, 'meme': 4, 'Python': 4, 'JavaScript': 8}
+2025-09-19 21:33:57 | INFO | Chart updated successfully for keyword: meme
+2025-09-19 21:34:02 | INFO | Processed JSON message: {'message': 'I just tried a movie! It was amazing.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:34:02', 'category': 'entertainment', 'sentiment': 0.18, 'keyword_mentioned': 'movie', 'message_length': 37}
+2025-09-19 21:34:02 | INFO | Message received - Keyword: movie, Sentiment: 0.18
+2025-09-19 21:34:02 | INFO | Updated keyword sentiment averages: {'movie': 0.29, 'game': 0.4, 'recipe': 0.46, 'other': 0.54, 'travel': 0.55, 'meme': 0.36, 'Python': 0.37, 'JavaScript': 0.44}
+2025-09-19 21:34:02 | INFO | Updated keyword counts: {'movie': 10, 'game': 11, 'recipe': 16, 'other': 33, 'travel': 7, 'meme': 4, 'Python': 4, 'JavaScript': 8}
+2025-09-19 21:34:02 | INFO | Chart updated successfully for keyword: movie
+2025-09-19 21:34:07 | INFO | Processed JSON message: {'message': 'I just saw a meme! It was boring.', 'author': 'Alice', 'timestamp': '2025-09-19 21:34:07', 'category': 'humor', 'sentiment': 0.17, 'keyword_mentioned': 'meme', 'message_length': 33}
+2025-09-19 21:34:07 | INFO | Message received - Keyword: meme, Sentiment: 0.17
+2025-09-19 21:34:07 | INFO | Updated keyword sentiment averages: {'movie': 0.29, 'game': 0.4, 'recipe': 0.46, 'other': 0.54, 'travel': 0.55, 'meme': 0.33, 'Python': 0.37, 'JavaScript': 0.44}
+2025-09-19 21:34:07 | INFO | Updated keyword counts: {'movie': 10, 'game': 11, 'recipe': 16, 'other': 33, 'travel': 7, 'meme': 5, 'Python': 4, 'JavaScript': 8}
+2025-09-19 21:34:07 | INFO | Chart updated successfully for keyword: meme
+2025-09-19 21:34:12 | INFO | Processed JSON message: {'message': 'I just found JavaScript! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:34:12', 'category': 'tech', 'sentiment': 0.58, 'keyword_mentioned': 'JavaScript', 'message_length': 38}
+2025-09-19 21:34:12 | INFO | Message received - Keyword: JavaScript, Sentiment: 0.58
+2025-09-19 21:34:12 | INFO | Updated keyword sentiment averages: {'movie': 0.29, 'game': 0.4, 'recipe': 0.46, 'other': 0.54, 'travel': 0.55, 'meme': 0.33, 'Python': 0.37, 'JavaScript': 0.45}
+2025-09-19 21:34:12 | INFO | Updated keyword counts: {'movie': 10, 'game': 11, 'recipe': 16, 'other': 33, 'travel': 7, 'meme': 5, 'Python': 4, 'JavaScript': 9}
+2025-09-19 21:34:12 | INFO | Chart updated successfully for keyword: JavaScript
+2025-09-19 21:34:17 | INFO | Processed JSON message: {'message': 'I just tried a trick! It was funny.', 'author': 'Bob', 'timestamp': '2025-09-19 21:34:17', 'category': 'other', 'sentiment': 0.17, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-09-19 21:34:17 | INFO | Message received - Keyword: other, Sentiment: 0.17
+2025-09-19 21:34:17 | INFO | Updated keyword sentiment averages: {'movie': 0.29, 'game': 0.4, 'recipe': 0.46, 'other': 0.53, 'travel': 0.55, 'meme': 0.33, 'Python': 0.37, 'JavaScript': 0.45}
+2025-09-19 21:34:17 | INFO | Updated keyword counts: {'movie': 10, 'game': 11, 'recipe': 16, 'other': 34, 'travel': 7, 'meme': 5, 'Python': 4, 'JavaScript': 9}
+2025-09-19 21:34:17 | INFO | Chart updated successfully for keyword: other
+2025-09-19 21:34:22 | INFO | Processed JSON message: {'message': 'I just saw a story! It was boring.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:34:22', 'category': 'other', 'sentiment': 0.88, 'keyword_mentioned': 'other', 'message_length': 34}
+2025-09-19 21:34:22 | INFO | Message received - Keyword: other, Sentiment: 0.88
+2025-09-19 21:34:22 | INFO | Updated keyword sentiment averages: {'movie': 0.29, 'game': 0.4, 'recipe': 0.46, 'other': 0.54, 'travel': 0.55, 'meme': 0.33, 'Python': 0.37, 'JavaScript': 0.45}
+2025-09-19 21:34:22 | INFO | Updated keyword counts: {'movie': 10, 'game': 11, 'recipe': 16, 'other': 35, 'travel': 7, 'meme': 5, 'Python': 4, 'JavaScript': 9}
+2025-09-19 21:34:22 | INFO | Chart updated successfully for keyword: other
+2025-09-19 21:34:27 | INFO | Processed JSON message: {'message': 'I just loved JavaScript! It was exciting.', 'author': 'Eve', 'timestamp': '2025-09-19 21:34:27', 'category': 'tech', 'sentiment': 0.42, 'keyword_mentioned': 'JavaScript', 'message_length': 41}
+2025-09-19 21:34:27 | INFO | Message received - Keyword: JavaScript, Sentiment: 0.42
+2025-09-19 21:34:27 | INFO | Updated keyword sentiment averages: {'movie': 0.29, 'game': 0.4, 'recipe': 0.46, 'other': 0.54, 'travel': 0.55, 'meme': 0.33, 'Python': 0.37, 'JavaScript': 0.45}
+2025-09-19 21:34:27 | INFO | Updated keyword counts: {'movie': 10, 'game': 11, 'recipe': 16, 'other': 35, 'travel': 7, 'meme': 5, 'Python': 4, 'JavaScript': 10}
+2025-09-19 21:34:27 | INFO | Chart updated successfully for keyword: JavaScript
+2025-09-19 21:34:32 | INFO | Processed JSON message: {'message': 'I just found a movie! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-19 21:34:32', 'category': 'entertainment', 'sentiment': 0.08, 'keyword_mentioned': 'movie', 'message_length': 35}
+2025-09-19 21:34:32 | INFO | Message received - Keyword: movie, Sentiment: 0.08
+2025-09-19 21:34:32 | INFO | Updated keyword sentiment averages: {'movie': 0.27, 'game': 0.4, 'recipe': 0.46, 'other': 0.54, 'travel': 0.55, 'meme': 0.33, 'Python': 0.37, 'JavaScript': 0.45}
+2025-09-19 21:34:32 | INFO | Updated keyword counts: {'movie': 11, 'game': 11, 'recipe': 16, 'other': 35, 'travel': 7, 'meme': 5, 'Python': 4, 'JavaScript': 10}
+2025-09-19 21:34:32 | INFO | Chart updated successfully for keyword: movie
+2025-09-19 21:34:37 | INFO | Processed JSON message: {'message': 'I just shared an app! It was weird.', 'author': 'Eve', 'timestamp': '2025-09-19 21:34:37', 'category': 'other', 'sentiment': 0.09, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-09-19 21:34:37 | INFO | Message received - Keyword: other, Sentiment: 0.09
+2025-09-19 21:34:37 | INFO | Updated keyword sentiment averages: {'movie': 0.27, 'game': 0.4, 'recipe': 0.46, 'other': 0.53, 'travel': 0.55, 'meme': 0.33, 'Python': 0.37, 'JavaScript': 0.45}
+2025-09-19 21:34:37 | INFO | Updated keyword counts: {'movie': 11, 'game': 11, 'recipe': 16, 'other': 36, 'travel': 7, 'meme': 5, 'Python': 4, 'JavaScript': 10}
+2025-09-19 21:34:37 | INFO | Chart updated successfully for keyword: other
+2025-09-19 21:34:42 | INFO | Processed JSON message: {'message': 'I just loved game! It was funny.', 'author': 'Alice', 'timestamp': '2025-09-19 21:34:42', 'category': 'gaming', 'sentiment': 0.32, 'keyword_mentioned': 'game', 'message_length': 32}
+2025-09-19 21:34:42 | INFO | Message received - Keyword: game, Sentiment: 0.32
+2025-09-19 21:34:42 | INFO | Updated keyword sentiment averages: {'movie': 0.27, 'game': 0.4, 'recipe': 0.46, 'other': 0.53, 'travel': 0.55, 'meme': 0.33, 'Python': 0.37, 'JavaScript': 0.45}
+2025-09-19 21:34:42 | INFO | Updated keyword counts: {'movie': 11, 'game': 12, 'recipe': 16, 'other': 36, 'travel': 7, 'meme': 5, 'Python': 4, 'JavaScript': 10}
+2025-09-19 21:34:42 | INFO | Chart updated successfully for keyword: game
+2025-09-19 21:34:47 | INFO | Processed JSON message: {'message': 'I just saw an app! It was exciting.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:34:47', 'category': 'other', 'sentiment': 0.98, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-09-19 21:34:47 | INFO | Message received - Keyword: other, Sentiment: 0.98
+2025-09-19 21:34:47 | INFO | Updated keyword sentiment averages: {'movie': 0.27, 'game': 0.4, 'recipe': 0.46, 'other': 0.54, 'travel': 0.55, 'meme': 0.33, 'Python': 0.37, 'JavaScript': 0.45}
+2025-09-19 21:34:47 | INFO | Updated keyword counts: {'movie': 11, 'game': 12, 'recipe': 16, 'other': 37, 'travel': 7, 'meme': 5, 'Python': 4, 'JavaScript': 10}
+2025-09-19 21:34:47 | INFO | Chart updated successfully for keyword: other
+2025-09-19 21:34:52 | INFO | Processed JSON message: {'message': 'I just tried recipe! It was exciting.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:34:52', 'category': 'food', 'sentiment': 0.9, 'keyword_mentioned': 'recipe', 'message_length': 37}
+2025-09-19 21:34:52 | INFO | Message received - Keyword: recipe, Sentiment: 0.9
+2025-09-19 21:34:52 | INFO | Updated keyword sentiment averages: {'movie': 0.27, 'game': 0.4, 'recipe': 0.49, 'other': 0.54, 'travel': 0.55, 'meme': 0.33, 'Python': 0.37, 'JavaScript': 0.45}
+2025-09-19 21:34:52 | INFO | Updated keyword counts: {'movie': 11, 'game': 12, 'recipe': 17, 'other': 37, 'travel': 7, 'meme': 5, 'Python': 4, 'JavaScript': 10}
+2025-09-19 21:34:52 | INFO | Chart updated successfully for keyword: recipe
+2025-09-19 21:34:57 | INFO | Processed JSON message: {'message': 'I just shared a trick! It was exciting.', 'author': 'Eve', 'timestamp': '2025-09-19 21:34:57', 'category': 'other', 'sentiment': 0.65, 'keyword_mentioned': 'other', 'message_length': 39}
+2025-09-19 21:34:57 | INFO | Message received - Keyword: other, Sentiment: 0.65
+2025-09-19 21:34:57 | INFO | Updated keyword sentiment averages: {'movie': 0.27, 'game': 0.4, 'recipe': 0.49, 'other': 0.54, 'travel': 0.55, 'meme': 0.33, 'Python': 0.37, 'JavaScript': 0.45}
+2025-09-19 21:34:57 | INFO | Updated keyword counts: {'movie': 11, 'game': 12, 'recipe': 17, 'other': 38, 'travel': 7, 'meme': 5, 'Python': 4, 'JavaScript': 10}
+2025-09-19 21:34:57 | INFO | Chart updated successfully for keyword: other
+2025-09-19 21:35:02 | INFO | Processed JSON message: {'message': 'I just found a trick! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:35:02', 'category': 'other', 'sentiment': 0.23, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-09-19 21:35:02 | INFO | Message received - Keyword: other, Sentiment: 0.23
+2025-09-19 21:35:02 | INFO | Updated keyword sentiment averages: {'movie': 0.27, 'game': 0.4, 'recipe': 0.49, 'other': 0.53, 'travel': 0.55, 'meme': 0.33, 'Python': 0.37, 'JavaScript': 0.45}
+2025-09-19 21:35:02 | INFO | Updated keyword counts: {'movie': 11, 'game': 12, 'recipe': 17, 'other': 39, 'travel': 7, 'meme': 5, 'Python': 4, 'JavaScript': 10}
+2025-09-19 21:35:02 | INFO | Chart updated successfully for keyword: other
+2025-09-19 21:35:07 | INFO | Processed JSON message: {'message': 'I just found a story! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:35:07', 'category': 'other', 'sentiment': 0.27, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-09-19 21:35:07 | INFO | Message received - Keyword: other, Sentiment: 0.27
+2025-09-19 21:35:07 | INFO | Updated keyword sentiment averages: {'movie': 0.27, 'game': 0.4, 'recipe': 0.49, 'other': 0.53, 'travel': 0.55, 'meme': 0.33, 'Python': 0.37, 'JavaScript': 0.45}
+2025-09-19 21:35:07 | INFO | Updated keyword counts: {'movie': 11, 'game': 12, 'recipe': 17, 'other': 40, 'travel': 7, 'meme': 5, 'Python': 4, 'JavaScript': 10}
+2025-09-19 21:35:07 | INFO | Chart updated successfully for keyword: other
+2025-09-19 21:35:12 | INFO | Processed JSON message: {'message': 'I just found recipe! It was funny.', 'author': 'Eve', 'timestamp': '2025-09-19 21:35:12', 'category': 'food', 'sentiment': 0.52, 'keyword_mentioned': 'recipe', 'message_length': 34}
+2025-09-19 21:35:12 | INFO | Message received - Keyword: recipe, Sentiment: 0.52
+2025-09-19 21:35:12 | INFO | Updated keyword sentiment averages: {'movie': 0.27, 'game': 0.4, 'recipe': 0.49, 'other': 0.53, 'travel': 0.55, 'meme': 0.33, 'Python': 0.37, 'JavaScript': 0.45}
+2025-09-19 21:35:12 | INFO | Updated keyword counts: {'movie': 11, 'game': 12, 'recipe': 18, 'other': 40, 'travel': 7, 'meme': 5, 'Python': 4, 'JavaScript': 10}
+2025-09-19 21:35:12 | INFO | Chart updated successfully for keyword: recipe
+2025-09-19 21:35:17 | INFO | Processed JSON message: {'message': 'I just saw Python! It was exciting.', 'author': 'Charlie', 'timestamp': '2025-09-19 21:35:17', 'category': 'tech', 'sentiment': 0.29, 'keyword_mentioned': 'Python', 'message_length': 35}
+2025-09-19 21:35:17 | INFO | Message received - Keyword: Python, Sentiment: 0.29
+2025-09-19 21:35:17 | INFO | Updated keyword sentiment averages: {'movie': 0.27, 'game': 0.4, 'recipe': 0.49, 'other': 0.53, 'travel': 0.55, 'meme': 0.33, 'Python': 0.36, 'JavaScript': 0.45}
+2025-09-19 21:35:17 | INFO | Updated keyword counts: {'movie': 11, 'game': 12, 'recipe': 18, 'other': 40, 'travel': 7, 'meme': 5, 'Python': 5, 'JavaScript': 10}
+2025-09-19 21:35:17 | INFO | Chart updated successfully for keyword: Python
+2025-09-19 21:35:22 | INFO | Processed JSON message: {'message': 'I just tried a meme! It was funny.', 'author': 'Alice', 'timestamp': '2025-09-19 21:35:22', 'category': 'humor', 'sentiment': 0.6, 'keyword_mentioned': 'meme', 'message_length': 34}
+2025-09-19 21:35:22 | INFO | Message received - Keyword: meme, Sentiment: 0.6
+2025-09-19 21:35:22 | INFO | Updated keyword sentiment averages: {'movie': 0.27, 'game': 0.4, 'recipe': 0.49, 'other': 0.53, 'travel': 0.55, 'meme': 0.37, 'Python': 0.36, 'JavaScript': 0.45}
+2025-09-19 21:35:22 | INFO | Updated keyword counts: {'movie': 11, 'game': 12, 'recipe': 18, 'other': 40, 'travel': 7, 'meme': 6, 'Python': 5, 'JavaScript': 10}
+2025-09-19 21:35:22 | INFO | Chart updated successfully for keyword: meme
+2025-09-19 21:35:27 | INFO | Processed JSON message: {'message': 'I just found a trick! It was exciting.', 'author': 'Eve', 'timestamp': '2025-09-19 21:35:27', 'category': 'other', 'sentiment': 0.99, 'keyword_mentioned': 'other', 'message_length': 38}
+2025-09-19 21:35:27 | INFO | Message received - Keyword: other, Sentiment: 0.99
+2025-09-19 21:35:27 | INFO | Updated keyword sentiment averages: {'movie': 0.27, 'game': 0.4, 'recipe': 0.49, 'other': 0.54, 'travel': 0.55, 'meme': 0.37, 'Python': 0.36, 'JavaScript': 0.45}
+2025-09-19 21:35:27 | INFO | Updated keyword counts: {'movie': 11, 'game': 12, 'recipe': 18, 'other': 41, 'travel': 7, 'meme': 6, 'Python': 5, 'JavaScript': 10}
+2025-09-19 21:35:27 | INFO | Chart updated successfully for keyword: other
+2025-09-19 21:35:32 | INFO | Processed JSON message: {'message': 'I just tried an app! It was funny.', 'author': 'Bob', 'timestamp': '2025-09-19 21:35:32', 'category': 'other', 'sentiment': 0.32, 'keyword_mentioned': 'other', 'message_length': 34}
+2025-09-19 21:35:32 | INFO | Message received - Keyword: other, Sentiment: 0.32
+2025-09-19 21:35:32 | INFO | Updated keyword sentiment averages: {'movie': 0.27, 'game': 0.4, 'recipe': 0.49, 'other': 0.53, 'travel': 0.55, 'meme': 0.37, 'Python': 0.36, 'JavaScript': 0.45}
+2025-09-19 21:35:32 | INFO | Updated keyword counts: {'movie': 11, 'game': 12, 'recipe': 18, 'other': 42, 'travel': 7, 'meme': 6, 'Python': 5, 'JavaScript': 10}
+2025-09-19 21:35:32 | INFO | Chart updated successfully for keyword: other
+2025-09-19 21:35:37 | INFO | Processed JSON message: {'message': 'I just loved travel! It was exciting.', 'author': 'Eve', 'timestamp': '2025-09-19 21:35:37', 'category': 'travel', 'sentiment': 0.23, 'keyword_mentioned': 'travel', 'message_length': 37}
+2025-09-19 21:35:37 | INFO | Message received - Keyword: travel, Sentiment: 0.23
+2025-09-19 21:35:37 | INFO | Updated keyword sentiment averages: {'movie': 0.27, 'game': 0.4, 'recipe': 0.49, 'other': 0.53, 'travel': 0.51, 'meme': 0.37, 'Python': 0.36, 'JavaScript': 0.45}
+2025-09-19 21:35:37 | INFO | Updated keyword counts: {'movie': 11, 'game': 12, 'recipe': 18, 'other': 42, 'travel': 8, 'meme': 6, 'Python': 5, 'JavaScript': 10}
+2025-09-19 21:35:39 | INFO | Chart updated successfully for keyword: travel
+2025-09-19 21:35:39 | WARNING | Consumer interrupted by user.
+2025-09-19 21:35:39 | INFO | Kafka consumer for topic 'project_json' closed.
+2025-09-19 21:35:39 | INFO | END consumer for topic 'project_json' and group 'buzz_group'.

@@ -21,7 +21,8 @@ Example JSON message (after deserialization) to be analyzed
 import os
 import json  # handle JSON parsing
 from collections import defaultdict  # data structure for counting keyword occurrences
-from matplotlib.ticker import PercentFormatter
+from matplotlib import cm
+from matplotlib.colors import Normalize
 
 # Import external packages
 from dotenv import load_dotenv
@@ -93,37 +94,52 @@ plt.ion()
 
 def update_chart():
     """Update the live chart with the top 5 keyword sentiment averages."""
-    # Clear the previous chart
     ax.clear()
 
     # Get top 5 keywords by count
     top_keywords = sorted(keyword_counts.items(), key=lambda x: x[1], reverse=True)[:5]
-
-    # Extract just the keywords
     keywords_list = [keyword for keyword, _ in top_keywords]
 
-    # Get the corresponding sentiment averages
-    sentiment_avg_list = [keyword_sentiment_avg[keyword] for keyword in keywords_list]
-
-    # Manually convert sentiments to percentage values
+    # Convert sentiment to percentages (0–100)
     sentiment_avg_list = [keyword_sentiment_avg[keyword] * 100 for keyword in keywords_list]
 
-    # Create the bar chart
-    ax.bar(keywords_list, sentiment_avg_list, color="skyblue")
+    # Create a colormap (dark blue to light blue)
+    cmap = cm.get_cmap("Blues")
+    norm = Normalize(vmin=30, vmax=80)  # Map 30–80% to full gradient
+
+    # Map each sentiment to a color in the gradient
+    bar_colors = [cmap(norm(value)) for value in sentiment_avg_list]
+
+    # Create the bar chart with colored bars
+    bars = ax.bar(range(len(keywords_list)), sentiment_avg_list, color=bar_colors)
 
     # Set labels and title
     ax.set_xlabel("Keywords")
     ax.set_ylabel("Sentiment Percentage")
     ax.set_title("Top 5 Keywords by Count with Sentiment Rating")
 
-    # Rotate x-axis labels for readability
+    # Set x-ticks and labels
+    ax.set_xticks(range(len(keywords_list)))
     ax.set_xticklabels(keywords_list, rotation=45, ha="right")
 
-    # Manually format y-axis tick labels to include %
-    y_ticks = ax.get_yticks()
-    ax.set_yticklabels([f"{int(tick)}%" for tick in y_ticks])
+    # Format y-axis as percent
+    from matplotlib.ticker import FuncFormatter
+    ax.yaxis.set_major_formatter(FuncFormatter(lambda x, _: f"{int(x)}%"))
 
-    # Adjust layout and draw chart
+    # Add percentage labels above each bar
+    for bar in bars:
+        height = bar.get_height()
+        ax.text(
+            bar.get_x() + bar.get_width() / 2,
+            height + 1,
+            f"{height:.1f}%",
+            ha='center',
+            va='bottom',
+            fontsize=9,
+            color='black'
+        )
+
+    # Adjust layout and render
     plt.tight_layout()
     plt.draw()
     plt.pause(0.01)
